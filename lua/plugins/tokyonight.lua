@@ -4,10 +4,15 @@ return {
   priority = 1000,
   opts = {
     -- transparent = true,
-    theme = "night",
+    style = "night",
+    light_style = "day",
     styles = {
       sidebars = "transparent",
       floats = "transparent",
     },
+    on_colors = function(colors)
+      colors.hint = colors.orange
+      colors.error = "#ff0000"
+    end,
   },
 }
